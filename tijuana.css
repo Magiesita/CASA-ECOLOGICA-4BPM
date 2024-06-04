@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex-grow: 1;
+    flex-basis: 200;
+    padding: 2rem 9%;
+}
+.titulo{
+    color: rgb(6, 70, 145);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(13, 56, 156);
+    font-weight: bolder;
+}
+header .navbar a{
+    font-size: 15px;
+    color: #666;
+    text-align: right;
+}
+
+/*PRINCIPIO*/
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(tijuanacont.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 30px;
+    color: rgb(57, 84, 113);
+}
+
+.home .content p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+/*SITUACION ACTUAL*/
+.contenedor-situacion {
+    padding: 60px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; 
+}
+.cont-situacion{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont-situacion .img-situacion {
+    width: 48%;
+}
+
+.img-situacion {
+    height: 350px;
+    width: 350px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.cont-situacion .texto-situacion {
+    width: 48%;
+}
+
+.texto-situacion p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*ZONAS*/
+.problematicas{
+    background: #b8c5d8;
+}
+.contenedor-prob{
+    padding: 60px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; 
+}
+.cont-problematicas{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont-problematicas .t1{
+    width: 70%;
+}
+.t1{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+.t1 thead th{
+    background-color: #2e475d;
+    color: #fff;
+    text-align: center;
+}
+.t1 th,
+.t1 td{
+    padding: 12px 15px;
+}
+.t1 tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.list-problematicas{
+    width: 25%;
+}
+ul{
+    list-style-position: inside;
+}
+li{
+    color: rgb(74, 85, 110);
+    font-weight: 300;
+}
+.list-problematicas h3{
+    text-align: left;
+    color: #41505d;
+    font-size: 0.9em;
+}
+/*INCENDIOS*/
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.incendios .row .video-container video {
+    width: 400px;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 300px;
+    object-fit: cover;
+}
+
+.content {
+    width: 40%;
+}
+
+.incendios .row .content p {
+    font-size: 15px;
+    color: #999;
+    padding: 10px 0;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+/*IMAGENES*/
+.EJEMPLOS{
+    background-color: #304957;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    height: 60%;
+    border-radius: 5px 5px 5px 5px;
+}
+.container img{
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    border-radius: 5px 5px 5px 5px;
+}
